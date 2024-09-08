@@ -6,10 +6,13 @@
 
     <%= render @cart %>
 
-    <%= link_to "Edit this cart", edit_cart_path(@cart), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Back to carts", carts_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this cart", edit_cart_path(@cart), 
+      class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600' %>
+    <%= link_to "Back to carts", carts_path, 
+      class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600' %>
     <div class="inline-block ml-2">
-      <%= button_to "Destroy this cart", @cart, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to "Destroy this cart", @cart, method: :delete, 
+        class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600' %>
     </div>
   </div>
 </div>
